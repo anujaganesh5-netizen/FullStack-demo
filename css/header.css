@@ -1,0 +1,63 @@
+.navbar {
+  background-color: #2e3b55;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 1000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+.navbar img {
+  height: 85px;
+  width: 100px;
+  margin-left: 30px;
+}
+.user {
+  margin-right: 20px;
+}
+.login{
+  margin-right: 20px;
+  font-size: 20px;
+}
+.login a{
+  color: white;
+  text-decoration: none;
+}
+.bottom-nav {
+  background-color: #2e3b55;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+}
+.bottom-nav .icon {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.bottom-nav .icon:hover {
+  transform: scale(1.2);
+  color: black;
+}
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-nav a:visited {
+  color: white;
+}
+
+.bottom-nav a:hover {
+  color: red;
+}

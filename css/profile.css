@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.navbar {
+  background-color: #2e3b55;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 1000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+.navbar img {
+  height: 85px;
+  width: 100px;
+  margin-left: 30px;
+}
+.user {
+  margin-right: 20px;
+}
+
+.profile-card {
+  background: white;
+  margin: 120px auto 20px;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cover img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.profile-info {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: white;
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: -90px;
+}
+.profile-text {
+  margin-left: 200px;
+}
+.profile-text h1 {
+  font-size: 28px;
+}
+.profile-text span {
+  font-size: 16px;
+  color: gray;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.location {
+  color: gray;
+  margin-top: 5px;
+}
+
+.location a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+.connections {
+  color: #0a66c2;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.company {
+  margin-left: auto;
+  font-weight: bold;
+}
+.section {
+  background: white;
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+.section h2 {
+  margin-bottom: 10px;
+}
+.bottom-nav {
+  background-color: #2e3b55;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+}
+.bottom-nav .icon {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.bottom-nav .icon:hover {
+  transform: scale(1.2);
+}
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-nav a:visited {
+  color: white;
+}
+
+.bottom-nav a:hover {
+  color: red;
+}
