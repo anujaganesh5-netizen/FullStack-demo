@@ -5,7 +5,7 @@
       const nextBtn = document.querySelector(".arrow.right");
 
       let index = 0;
-      const slideWidth = 330; // image width + gap
+      const slideWidth = 330; 
 
       function updateSlider() {
         slider.style.transform = `translateX(${-index * slideWidth}px)`;
