@@ -5,46 +5,134 @@
 }
 
 body {
-  background-color: #f7f7f7;
+   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-
-
-.main-section {
-  position: relative;
-  text-align: center;
-  padding: 40px 20px;
-}
 .background {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  position: fixed;
+  top: 50px;
+  /* left: 0; */
+  width: 2000px;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  filter: blur(6px);
+  filter: blur(4px);
 }
-.logo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px;
-  gap: 30px;
-  padding-left: 0px;
-  margin-top: 130px;
-    text-decoration: none;
-}
-.logo-grid h6 {
-  color: black;
-  font-size: medium;
-}
-.logo-grid img {
-  width: 100px;
-  height: 95px;
-}
-.logo-grid a{
-  text-decoration: none;
+.page-heading {
+  background: linear-gradient(90deg, #2563eb, #16a34a);;
+  position: absolute;
+  left: 560px;   /* adjust spacing */
+  top: 140px;   /* adjust below navbar */
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
 }
 
- 
+/* Center everything */
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  min-height: calc(100vh - 140px); /* adjusts below header */
+  padding: 90px;
+}
+
+/* Bigger cards */
+.skill-card {
+  width: 380px;
+  border-radius: 16px;
+  padding: 35px 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Headings bigger */
+.skill-card h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* List style */
+.skill-card ul {
+  list-style: none;
+}
+
+.skill-card li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  padding: 14px 0;
+  border-bottom: 2px solid skyblue;
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+/* Icons bigger */
+.skill-card i {
+  font-size: 22px;
+}
+
+/* Theme colors */
+.frontend h2,
+.frontend i {
+  color: #2563eb;
+}
+
+.backend h2,
+.backend i {
+  color: #16a34a;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+  .skills-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+
+/* Card hover animation */
+.skill-card {
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* Lift + shadow on hover */
+.skill-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Icon animation */
+.skill-card li i {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover li i {
+  transform: scale(1.2);
+}
+
+/* Frontend hover accent */
+.frontend:hover {
+  border-top: 6px solid #2563eb;
+}
+
+/* Backend hover accent */
+.backend:hover {
+  border-top: 6px solid #16a34a;
+}
+
+/* Text highlight on hover */
+.skill-card:hover li {
+  color: #111;
+}
+

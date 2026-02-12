@@ -5,8 +5,7 @@
 }
 
 body {
-  height: 100vh;
-  background-color: #0f1f2e;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 main {
@@ -24,13 +23,13 @@ main {
   filter: blur(4px);
 }
 .sidebar {
-  height: calc(100vh - 100px); 
-  overflow-y: auto; 
+  height: calc(100vh - 100px);
+  overflow-y: auto;
 }
 .sidebar {
   width: 250px;
   padding: 20px;
-  border-right: 2px solid white;
+  border-right: 2px solid #2e3b55;
   position: fixed;
   margin-top: 105px;
 }
@@ -57,11 +56,10 @@ main {
   margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  color: #e9ebf0;
+  color: #2e3b55;
   font-style: italic;
   font-size: xx-large;
   text-align: center;
-  
 }
 
 .content {
@@ -75,7 +73,7 @@ main {
   margin-bottom: 50px;
 }
 .card {
-  background-color: lightblue;
+  background-color: rgb(237, 249, 255);
   padding: 15px;
   border-radius: 8px;
   width: 200px;
@@ -89,7 +87,7 @@ main {
   width: 150px;
   height: 150px;
   margin-bottom: 10px;
-
+  border: 1px solid #2e3b55;
   transition: transform 0.4s ease;
 }
 
@@ -97,13 +95,11 @@ main {
   transform: scale(1.1);
 }
 
-
 .card a {
   text-decoration: none;
   color: black;
   display: block;
 }
-
 
 .card a:hover {
   text-decoration: none;

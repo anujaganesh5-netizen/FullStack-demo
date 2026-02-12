@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  background: white;
+   background: rgb(237, 249, 255);
 }
 
 .profile-pic img {
@@ -73,12 +73,12 @@ body {
   font-weight: bold;
 }
 .section {
-  background: white;
-  width: 90%;
+background: rgb(237, 249, 255);
+  width: 88%;
   margin: 10px auto;
   padding: 20px;
   border-radius: 10px;
-  background: white;
+ 
 }
 .section h2 {
   margin-bottom: 10px;

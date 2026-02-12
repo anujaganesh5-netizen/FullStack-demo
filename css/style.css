@@ -4,18 +4,18 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f3f3f3;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #000;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 .animation-box {
-  position: relative;
+  /* position: relative; */
   bottom: 850px;
 }
 .about {
-  position: relative;
+  /* position: relative; */
   bottom: 870px;
 }
 .animation-box {
