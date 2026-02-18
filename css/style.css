@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
+
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #000;
@@ -11,21 +7,13 @@ body {
   height: 100vh;
 }
 .animation-box {
-  /* position: relative; */
-  bottom: 850px;
-}
-.about {
-  /* position: relative; */
-  bottom: 870px;
-}
-.animation-box {
   margin: 30px auto;
   border: 3px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: fadeIn 2s ease-in-out infinite alternate;
-  margin-top: 130px;
+  margin-top: 120px;
 }
 .animation-box img {
   height: 500px;
@@ -44,7 +32,7 @@ body {
 .about {
   width: 80%;
   margin: 0 auto 40px auto;
-  margin-bottom: 10px;
+   margin-top: 0px;
 }
 .about h3 {
   font-size: 20px;
