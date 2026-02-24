@@ -37,5 +37,9 @@ body {
 .about h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-size: 30px;
+}
+.about p{
+  font-size: 19px;
 }
