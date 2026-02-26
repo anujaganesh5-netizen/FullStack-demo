@@ -9,9 +9,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -22,174 +19,333 @@
       <div class="title"><h3>InterviewHub</h3></div>
       <div class="user"><h6>HELLO, USER</h6></div>
     </header>
+
     <main class="main">
-    
       <aside class="sidebar">
         <ul>
-          <li><h2>Filters</h2></li>
-          <hr>
           <li>Company</li>
+          <select name="Company" id="Dropdown">
+            <option>~Select the Company~</option>
+            <option value="Netflix">Netflix</option>
+            <option value="Wanderlog">Wanderlog</option>
+            <option value="Plaid">Plaid</option>
+            <option value="Support & Onboarding Lead">
+              Support & Onboarding Lead
+            </option>
+            <option value="G&A Recruiter">G&A Recruiter</option>
+            <option value="Events Lead">Events Lead</option>
+            <option value="Executive Assistant">Executive Assistant</option>
+            <option value="Research specialist">Research specialist</option>
+            <option value="Head of Sales">Head of Sales</option>
+            <option value="Video Editor">Video Editor</option>
+            <option value="Junior Brand Strategist">
+              Junior Brand Strategist
+            </option>
+            <option value="In-House CRA">In-House CRA</option>
+            <option value="Customer Care Analyst">Customer Care Analyst</option>
+            <option value="CAD Drafter">CAD Drafter</option>
+            <option value="UX/UI Designer">UX/UI Designer</option>
+            <option value="Business Analyst">Business Analyst</option>
+          </select>
+
           <li>Location</li>
+          <select name="location" id="Dropdown">
+            <option>~Select the Location~</option>
+            <option value="United States">United States</option>
+            <option value="San Francisco,CA">San Francisco,CA</option>
+            <option value="Los Analyst,CA">Los Analyst,CA</option>
+            <option value="Springfield,IL">Springfield,IL</option>
+            <option value="East Montpelier,VT">East Montpelier,VT</option>
+            <option value="New York,NY">New York,NY</option>
+            <option value="Denver,CO">Denver,CO</option>
+          </select>
+
           <li>Experience</li>
+          <select name="experience" id="Dropdown">
+            <option>~Select your Experience~</option>
+            <option>Fresher</option>
+            <option>1-2 years</option>
+            <option>2-3 years</option>
+            <option>3-4 years</option>
+            <option>4-5 years</option>
+            <option>5-6 years</option>
+            <option>above 6 years</option>
+          </select>
+
           <li>Remote</li>
+          <select name="work mode" id="Dropdown">
+            <option>~Select the Work Mode~</option>
+            <option>Work from office</option>
+            <option>Hybrid</option>
+            <option>Remote</option>
+          </select>
+
+          <button class="submit">Filters</button>
         </ul>
       </aside>
 
       <section class="content">
+        <!-- Netflix -->
         <div class="card">
           <a href="./netflix.html">
             <img src="../assets/Netflix.png" alt="img" />
             <h4>Netflix</h4>
             <p>
-              Software Engineer (L4)<br />Member, Commerce & Games
-              Engineering<br />United States<br /><small>22 hours ago</small>
+              Software Engineer (L4)<br />
+              Member, Commerce & Games Engineering<br />
+              United States<br />
+              3-4 years<br />
+              Remote<br />
+              <small>2 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- Wanderlog -->
         <div class="card">
           <a href="./wanderlog.html">
             <img src="../assets/Wandarlo.png" alt="img" />
             <h4>Wanderlog</h4>
             <p>
-              Full-Stack Software Engineer<br />United States<br /><small
-                >5 hours ago</small
-              >
+              Full-Stack Software Engineer<br />
+              United States<br />
+              2-3 years<br />
+              Remote<br />
+              <small>5 hours ago</small>
             </p>
           </a>
         </div>
 
+        <!-- Plaid -->
         <div class="card">
           <a href="./plaid.html">
-            <img src="../assets/Plaid (1).png" alt="img" class="card-link" />
+            <img src="../assets/Plaid (1).png" alt="img" />
             <h4>Plaid</h4>
             <p>
-              Software Engineer – Web<br />United States<br /><small
-                >5 hours ago</small
-              >
+              Software Engineer – Web<br />
+              United States<br />
+              2-3 years<br />
+              Hybrid<br />
+              <small>5 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- Support & Onboarding Lead -->
         <div class="card">
           <a href="./Support & Onboarding Lead.html">
             <img src="../assets/Support&Organiser Lead.png" alt="img" />
             <h4>Support & Onboarding Lead</h4>
-            <p>Base<br />United States<br /><small>2 hours ago</small></p>
+            <p>
+              Base<br />
+              United States<br />
+              4-5 years<br />
+              Work from office<br />
+              <small>2 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- G&A Recruiter -->
         <div class="card">
           <a href="./G&A Recruiter.html">
             <img src="../assets/G&A Recruiter.png" alt="img" />
             <h4>G&A Recruiter</h4>
-            <p>Decagon<br />San Francisco,CA<br /><small>4 hours ago</small></p>
+            <p>
+              Decagon<br />
+              San Francisco,CA<br />
+              3-4 years<br />
+              Work from office<br />
+              <small>4 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Events Lead -->
         <div class="card">
           <a href="./Events Lead.html">
             <img src="../assets/Events Lead.png" alt="img" />
             <h4>Events Lead</h4>
-            <p>Substack<br />Los Angeles,CA<br /><small>2 hours ago</small></p>
+            <p>
+              Substack<br />
+              Los Angeles,CA<br />
+              4-5 years<br />
+              Hybrid<br />
+              <small>2 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Executive Assistant -->
         <div class="card">
           <a href="./Executive Assistant.html">
             <img src="../assets/Exective Assitor.png" alt="img" />
             <h4>Executive Assistant</h4>
-            <p>Wiraa<br />United States<br /><small>17 minutes ago</small></p>
+            <p>
+              Wiraa<br />
+              United States<br />
+              1-2 years<br />
+              Remote<br />
+              <small>17 minutes ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Research Specialist -->
         <div class="card">
           <a href="./Research specialist.html">
             <img src="../assets/Research.png" alt="img" />
             <h4>Research specialist</h4>
-            <p>Peek (L4)<br />United States<br /><small>2 hours ago</small></p>
+            <p>
+              Peek (L4)<br />
+              United States<br />
+              2-3 years<br />
+              Remote<br />
+              <small>2 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Head of Sales -->
         <div class="card">
           <a href="./Head of Sales.html">
             <img src="../assets/Head sales.png" alt="img" />
             <h4>Head of Sales</h4>
             <p>
-              eDerm Systems<br />Springfield,IL<br /><small>3 hours ago</small>
+              eDerm Systems<br />
+              Springfield,IL<br />
+              5-6 years<br />
+              Work from office<br />
+              <small>3 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- Video Editor -->
         <div class="card">
           <a href="./Video Editor.html">
             <img src="../assets/Video Editor.png" alt="img" />
             <h4>Video Editor</h4>
             <p>
-              Roster<br />East Montpelier,VT<br /><small>3 hours ago</small>
+              Roster<br />
+              East Montpelier,VT<br />
+              1-2 years<br />
+              Hybrid<br />
+              <small>3 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- Junior Brand Strategist -->
         <div class="card">
           <a href="./Junior Brand .html">
             <img src="../assets/Junior.png" alt="img" />
             <h4>Junior Brand Strategist</h4>
             <p>
               the Skimm<br />
-              New York,NY<br /><small>4 hours ago</small>
+              New York,NY<br />
+              Fresher<br />
+              Hybrid<br />
+              <small>4 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- In-House CRA -->
         <div class="card">
           <a href="./In-House CRA.html">
             <img src="../assets/In house.png" alt="img" />
             <h4>In-House CRA</h4>
-            <p>Lensa<br />United States<br /><small>3 hours ago</small></p>
+            <p>
+              Lensa<br />
+              United States<br />
+              3-4 years<br />
+              Remote<br />
+              <small>3 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Customer Care Analyst -->
         <div class="card">
           <a href="./Customer Care Analyst.html">
             <img src="../assets/In house.png" alt="img" />
             <h4>Customer Care Analyst</h4>
-            <p>Lensa<br />United States<br /><small>7 hours ago</small></p>
+            <p>
+              Lensa<br />
+              United States<br />
+              1-2 years<br />
+              Remote<br />
+              <small>7 hours ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- CAD Drafter -->
         <div class="card">
           <a href="./CAD Drafter.html">
             <img src="../assets/CAD.png" alt="img" />
             <h4>CAD Drafter</h4>
             <p>
-              Luster National<br />Denver,CO <br /><small>3 hours ago</small>
+              Luster National<br />
+              Denver,CO<br />
+              2-3 years<br />
+              Work from office<br />
+              <small>3 hours ago</small>
             </p>
           </a>
         </div>
+
+        <!-- UX/UI Designer -->
         <div class="card">
           <a href="./UI Designer.html">
             <img src="../assets/UXUI.png" alt="img" />
             <h4>UX/UI Designer</h4>
-            <p>MLabs<br />United States<br /><small>25 minutes ago</small></p>
+            <p>
+              MLabs<br />
+              United States<br />
+              2-3 years<br />
+              Remote<br />
+              <small>25 minutes ago</small>
+            </p>
           </a>
         </div>
+
+        <!-- Business Analyst -->
         <div class="card">
           <a href="./Business Analyst.html">
             <img src="../assets/Business.png" alt="img" />
             <h4>Business Analyst</h4>
-            <p>Arvento A<br />United States<br /><small>1 hours ago</small></p>
+            <p>
+              Arvento A<br />
+              United States<br />
+              3-4 years<br />
+              Hybrid<br />
+              <small>1 hours ago</small>
+            </p>
           </a>
         </div>
       </section>
     </main>
+
     <footer class="bottom-nav">
       <div class="icon">
-        <a href="../index.html"> <i class="fa-solid fa-house"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
       </div>
       <div class="icon">
         <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
       </div>
       <div class="icon">
-        <a href="./resume.html"> <i class="fa-solid fa-file-image"></i> </a>
+        <a href="./resume.html"><i class="fa-solid fa-file-image"></i></a>
       </div>
       <div class="icon">
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i
+        <a href="./question.html"
+          ><i class="fa-solid fa-clipboard-question"></i
         ></a>
       </div>
       <div class="icon">
-        <a href="./profile.html"> <i class="fa-solid fa-circle-user"></i></a>
+        <a href="./profile.html"><i class="fa-solid fa-circle-user"></i></a>
       </div>
     </footer>
-    <div id="header"></div>
   </body>
 </html>
