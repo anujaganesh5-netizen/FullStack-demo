@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Wireframe</title>
     <link rel="stylesheet" href="../css/wanderlog.css" />
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -15,15 +15,44 @@
     />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">
+   <header class="navbar">
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
       </div>
-      <div class="title"><h3>InterviewHub</h3></div>
-      <div class="user"><h6>HELLO, USER</h6></div>
+
+      <!-- Center: Icons -->
+      <div class="nav-icons">
+        <a href="../index.html" class="active">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="./job.html">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
+
+        <a href="./resume.html">
+          <i class="fa-solid fa-file-image"></i>
+        </a>
+
+        <a href="./question.html">
+          <i class="fa-solid fa-clipboard-question"></i>
+        </a>
+
+        <a href="./profile.html">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <h2>Hello, User</h2>
+        <a href="./login.html" class="login-btn">Login</a>
+      </div>
     </header>
     <section class="job-container">
-      <div class="left-section">
+      <div class="left-content">
         <img src="../assets/Wandarlo.png" alt="img" />
         <h3 class="company-name">Wanderlog</h3>
         <p class="location">United States</p>
@@ -35,7 +64,7 @@
         </a>
       </div>
 
-      <div class="right-section">
+      <div class="right-content">
         <h3>Use AI to assess how you fit</h3>
         <p class="sub-text">
           Get AI-powered advice on this job and more exclusive features.
@@ -91,25 +120,5 @@
         >
       </div>
     </div>
-
-    <footer class="bottom-nav">
-      <div class="icon">
-        <a href="../index.html"> <i class="fa-solid fa-house"></i></a>
-      </div>
-      <div class="icon">
-        <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
-      </div>
-      <div class="icon">
-        <a href="./resume.html"> <i class="fa-solid fa-file-image"></i> </a>
-      </div>
-      <div class="icon">
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i
-        ></a>
-      </div>
-      <div class="icon">
-        <a href="./profile.html"> <i class="fa-solid fa-circle-user"></i></a>
-      </div>
-    </footer>
   </body>
 </html>

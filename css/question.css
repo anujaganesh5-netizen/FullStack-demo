@@ -8,7 +8,6 @@ body {
 .background {
   position: fixed;
   top: 50px;
-  /* left: 0; */
   width: 2000px;
   height: 100vh;
   object-fit: cover;
@@ -16,11 +15,10 @@ body {
   filter: blur(4px);
 }
 .page-heading {
-  background: linear-gradient(90deg, #2563eb, #16a34a);;
   position: absolute;
   left: 560px;   /* adjust spacing */
   top: 140px;   /* adjust below navbar */
-  color: white;
+  color: #111;
   font-size: 28px;
   font-weight: 600;
 }

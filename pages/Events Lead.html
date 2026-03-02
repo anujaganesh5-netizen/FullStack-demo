@@ -15,15 +15,46 @@
     />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="../assets/logo.jpeg" alt="Logo" />
-      </div>
-      <div class="title"><h3>InterviewHub</h3></div>
-      <div class="user"><h6>HELLO, USER</h6></div>
-    </header>
+       <header class="navbar">
+
+    <!-- Left: Logo + Title -->
+    <div class="left-section">
+      <img src="./assets/logo.jpeg" alt="Logo" />
+      <h3 class="site-title">InterviewHub</h3>
+    </div>
+
+    <!-- Center: Icons -->
+    <div class="nav-icons">
+      <a href="../index.html"class="active">
+        <i class="fa-solid fa-house"></i>
+      </a>
+
+      <a href="./pages/job.html">
+        <i class="fa-solid fa-briefcase"></i>
+      </a>
+
+      <a href="./pages/resume.html">
+        <i class="fa-solid fa-file-image"></i>
+      </a>
+
+      <a href="./pages/question.html">
+        <i class="fa-solid fa-clipboard-question"></i>
+      </a>
+
+      <a href="./pages/profile.html">
+        <i class="fa-solid fa-circle-user"></i>
+      </a>
+    </div>
+
+    <!-- Right: Hello + Login -->
+    <div class="right-section">
+      <h2>Hello, User</h2>
+      <a href="./pages/login.html" class="login-btn">Login</a>
+    </div>
+
+  </header>
     <section class="job-container">
-      <div class="left-section">
+      <div class="left-content">
         <img src="../assets/Events Lead.png" alt="img" />
         <h3 class="company-name">GEvents Lead</h3>
         <p class="location">SLos Angeles,CA</p>
@@ -32,7 +63,7 @@
         <button class="apply-btn">Apply</button>
       </div>
 
-      <div class="right-section">
+      <div class="right-content">
         <h3>Use AI to assess how you fit</h3>
         <p class="sub-text">
           Get AI-powered advice on this job and more exclusive features.
@@ -87,25 +118,7 @@
           <h5>Head of Sales</h5></a
         >
       </div>
-      <footer class="bottom-nav">
-        <div class="icon">
-          <a href="../index.html"> <i class="fa-solid fa-house"></i></a>
-        </div>
-        <div class="icon">
-          <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
-        </div>
-        <div class="icon">
-          <a href="./resume.html"> <i class="fa-solid fa-file-image"></i> </a>
-        </div>
-        <div class="icon">
-          <a href="./question.html">
-            <i class="fa-solid fa-clipboard-question"></i
-          ></a>
-        </div>
-        <div class="icon">
-          <a href="./profile.html"> <i class="fa-solid fa-circle-user"></i></a>
-        </div>
-      </footer>
+     
     </div>
   </body>
 </html>

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
     <link rel="stylesheet" href="../css/profile.css" />
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,29 +16,52 @@
   </head>
 
   <body>
-    
     <header class="navbar">
-      <div class="logo">
-        <img src="../assets/logo.jpeg" alt="Logo" />
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
+        <img src="./assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
       </div>
-      <div class="title"><h3>InterviewHub</h3></div>
-      <div class="user"><h6>HELLO, USER</h6></div>
+
+      <!-- Center: Icons -->
+      <div class="nav-icons">
+        <a href="../index.html" class="active">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="./pages/job.html">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
+
+        <a href="./pages/resume.html">
+          <i class="fa-solid fa-file-image"></i>
+        </a>
+
+        <a href="./pages/question.html">
+          <i class="fa-solid fa-clipboard-question"></i>
+        </a>
+
+        <a href="./pages/profile.html">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <h2>Hello, User</h2>
+        <a href="./pages/login.html" class="login-btn">Login</a>
+      </div>
     </header>
-
     <section class="profile-card">
-
       <div class="cover">
         <img src="../assets/Background_profile.png" alt="Cover" />
       </div>
 
-
       <div class="profile-info">
-       
         <div class="profile-pic">
           <img src="../assets/me.jpeg" alt="Profile" />
         </div>
 
-   
         <div class="profile-text">
           <h1>Anuja Ganesh <span>She/Her</span></h1>
           <p class="text">Student at Freshworks STS Software Academy</p>
@@ -54,7 +77,6 @@
       </div>
     </section>
 
-
     <section class="section">
       <h2>Education</h2>
       <p><strong>Freshworks STS Software Academy</strong></p>
@@ -64,36 +86,14 @@
       <p>12th Completed · Jun 2019 – Mar 2025</p>
     </section>
 
-
     <section class="section">
       <h2>Skills</h2>
       <p>HTML · CSS · Python</p>
     </section>
-    
-      <section class="section">
+
+    <section class="section">
       <h2>Experience</h2>
       <p>-Add your Job-</p>
     </section>
-
-    <footer class="bottom-nav">
-      <div class="icon">
-        <a href="../index.html"> <i class="fa-solid fa-house"></i></a>
-      </div>
-      <div class="icon">
-        <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
-      </div>
-      <div class="icon">
-        <a href="./resume.html"> <i class="fa-solid fa-file-image"></i> </a>
-      </div>
-      <div class="icon">
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i
-        ></a>
-      </div>
-      <div class="icon">
-        <a href="./profile.html"> <i class="fa-solid fa-circle-user"></i></a>
-      </div>
-    </footer>
-    <div id="header"></div>
   </body>
 </html>

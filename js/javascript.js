@@ -41,3 +41,17 @@
  
 
 
+// Get current page path
+const currentPath = window.location.pathname;
+
+// Select all navbar links
+const navLinks = document.querySelectorAll(".nav-icons a");
+
+navLinks.forEach(link => {
+  const linkPath = new URL(link.href).pathname;
+
+  // Check if link matches current page
+  if (currentPath === linkPath) {
+    link.classList.add("active");
+  }
+});
