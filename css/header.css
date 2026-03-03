@@ -50,13 +50,13 @@
 }
 
 .nav-icons a:hover {
-  color: red;
+  color:#E67E22;
   transform: scale(1.2);
 }
 
 /* Active Page Icon */
 .nav-icons a.active {
-  color: orange;
+  color: #E67E22;
 }
 
 /* Right Section */
