@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,9 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-h2 {
+#signupForm h2 {
   text-align: center;
-  color: orange;
+  color: #16315d;
 }
 
 input {
@@ -31,7 +31,7 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background: orange;
+  background:  #16315d;
   border: none;
   color: white;
   font-weight: bold;
@@ -40,11 +40,14 @@ button {
 }
 
 button:hover {
-  background: darkorange;
+  background:  #16315d;
 }
 
 a {
-  color: orange;
+  color:  #16315d;
   font-weight: bold;
   text-decoration: none;
+}
+p{
+  margin-top: 10px;
 }

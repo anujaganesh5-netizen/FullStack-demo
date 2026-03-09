@@ -52,7 +52,7 @@ body {
 }
 
 .dot.active {
-  background-color: red;
+  background-color: #E67E22;
   width: 12px;
   height: 12px;
 }
@@ -72,7 +72,7 @@ body {
   border: none;
   font-size: 30px;
   cursor: pointer;
-  color: red;
+  color:#E67E22;
   padding: 10px;
   transition: transform 0.3s ease, color 0.3s ease;
 }

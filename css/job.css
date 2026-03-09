@@ -17,7 +17,7 @@ main {
   filter: blur(4px);
 }
 .sidebar {
-  height: calc(100vh - 100px);
+  height: 100vh;
   overflow-y: auto;
 }
 .sidebar {
@@ -108,19 +108,19 @@ main {
 }
 
 .card p:hover {
-  color: red;
+  color: #E67E22;
   text-decoration: none;
 }
 
 .card h4:hover {
-  color: red;
+  color: #E67E22;
   text-decoration: none;
 }
 
 .card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-#Dropdown {
+.Dropdown {
   height: 30px;
   width: 200px;
   border: 2px solid black;

@@ -84,6 +84,15 @@ body {
   color: #16a34a;
 }
 
+.questions-section{
+margin-top:40px;
+text-align:center;
+}
+
+.questions-section p{
+font-size:16px;
+}
+
 /* Responsive (mobile) */
 @media (max-width: 900px) {
   .skills-wrapper {
