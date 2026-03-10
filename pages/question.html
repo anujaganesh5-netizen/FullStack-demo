@@ -3,42 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Questions</title>
+     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/question.css" />
-    <link rel="stylesheet" href="../css/header.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
+
   <body>
     <header class="navbar">
-      <!-- Left: Logo + Title -->
       <div class="left-section">
-        <img src="../assets/logo.jpeg" alt="Logo" />
+        <img src="../assets/logo.jpeg" />
         <h3 class="site-title">InterviewHub</h3>
       </div>
 
-      <!-- Center: Icons -->
       <div class="nav-icons">
-        <a href="../index.html">
-          <i class="fa-solid fa-house"></i>
-        </a>
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
 
-        <a href="./job.html">
-          <i class="fa-solid fa-briefcase"></i>
-        </a>
+        <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
 
-        <a href="./resume.html">
-          <i class="fa-solid fa-file-image"></i>
-        </a>
+        <a href="./resume.html"><i class="fa-solid fa-file-image"></i></a>
 
         <a href="./question.html" class="active">
           <i class="fa-solid fa-clipboard-question"></i>
@@ -49,45 +37,76 @@
         </a>
       </div>
 
-      <!-- Right: Hello + Login -->
       <div class="right-section">
         <h2>Hello, User</h2>
         <a href="./login.html" class="login-btn">Login</a>
       </div>
     </header>
-    <div class="skills-wrapper">
-      <h2 class="page-heading">Prepare your interview form it</h2>
 
-      <!-- <img src="../assets/background_job.png" alt="img" class="background" /> -->
+    <div class="skills-wrapper">
+      <h2 class="page-heading">Prepare your interview from it</h2>
 
       <div class="skill-card frontend">
         <h2>Frontend</h2>
+
         <ul>
-          <li onclick="loadQuestions(1)"><i class="fa-brands fa-html5"></i> HTML</li>
-          <li onclick="loadQuestions(2)"><i class="fa-brands fa-css3-alt"></i> CSS</li>
-          <li onclick="loadQuestions(3)"><i class="fa-brands fa-js"></i> JavaScript</li>
-          <li onclick="loadQuestions(4)"><i class="fa-brands fa-react"></i> React.js</li>
-          <li onclick="loadQuestions(5)"><i class="fa-solid fa-cloud"></i> REST API</li>
-          <li onclick="loadQuestions(6)"><i class="fa-solid fa-database"></i> JSON</li>
+          <li onclick="openQuestions(1)">
+            <i class="fa-brands fa-html5"></i> HTML
+          </li>
+
+          <li onclick="openQuestions(2)">
+            <i class="fa-brands fa-css3-alt"></i> CSS
+          </li>
+
+          <li onclick="openQuestions(3)">
+            <i class="fa-brands fa-js"></i> JavaScript
+          </li>
+
+          <li onclick="openQuestions(4)">
+            <i class="fa-brands fa-react"></i> React.js
+          </li>
+
+          <li onclick="openQuestions(5)">
+            <i class="fa-solid fa-cloud"></i> REST API
+          </li>
+
+          <li onclick="openQuestions(6)">
+            <i class="fa-solid fa-database"></i> JSON
+          </li>
         </ul>
       </div>
 
       <div class="skill-card backend">
         <h2>Backend</h2>
+
         <ul>
-          <li onclick="loadQuestions(7)"><i class="fa-brands fa-python"></i> Python</li>
-          <li onclick="loadQuestions(8)"><i class="fa-solid fa-code"></i> TypeScript</li>
-          <li onclick="loadQuestions(9)"><i class="fa-brands fa-node-js"></i> Node.js</li>
-          <li onclick="loadQuestions(10)"><i class="fa-brands fa-php"></i> PHP</li>
-          <li onclick="loadQuestions(11)"><i class="fa-solid fa-database"></i> SQL</li>
-          <li onclick="loadQuestions(12)"><i class="fa-solid fa-server"></i> MySQL</li>
+          <li onclick="openQuestions(7)">
+            <i class="fa-brands fa-python"></i> Python
+          </li>
+
+          <li onclick="openQuestions(8)">
+            <i class="fa-solid fa-code"></i> TypeScript
+          </li>
+
+          <li onclick="openQuestions(9)">
+            <i class="fa-brands fa-node-js"></i> Node.js
+          </li>
+
+          <li onclick="openQuestions(10)">
+            <i class="fa-brands fa-php"></i> PHP
+          </li>
+
+          <li onclick="openQuestions(11)">
+            <i class="fa-solid fa-database"></i> SQL
+          </li>
+
+          <li onclick="openQuestions(12)">
+            <i class="fa-solid fa-server"></i> MySQL
+          </li>
         </ul>
       </div>
     </div>
-    <div class="questions-section">
-      <h2>Interview Questions</h2>
-      <div id="questionsContainer"></div>
-    </div>
-    <script src="../js/question.js" ></script>
+
+    <script src="../js/question.js"></script>
   </body>
 </html>

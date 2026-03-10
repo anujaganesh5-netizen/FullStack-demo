@@ -18,7 +18,7 @@ if(location && !text.includes(location)) show = false;
 if(experience && !text.includes(experience)) show = false;
 if(mode && !text.includes(mode)) show = false;
 
-card.style.display = show ? "block" : "none";
+card.style.display = show ? "flex" : "none";
 
 });
 

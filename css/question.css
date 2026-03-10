@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+font-family: 'Times New Roman', Times, serif;
 }
 .background {
   position: fixed;
@@ -137,4 +138,65 @@ font-size:16px;
 .skill-card:hover li {
   color: #111;
 }
+/* Dropdown container */
+.dropdown-questions {
+  display: none;
+  width: 100%;
+  margin-top:200px;
+  padding-left: 10px;
+}
 
+/* Question card */
+.question-card {
+  background-color: rgb(237, 249, 255);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  border: 1px solid #2e3b55;
+}
+
+/* Question text */
+.question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+/* Answer */
+.answer {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  padding-left: 18px;
+}
+
+/* Hover effect */
+.question-card:hover {
+  background: #E67E22;
+}
+.close-dropdown {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.close-answer {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 12px;
+}

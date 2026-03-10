@@ -33,14 +33,14 @@
 }
 
 .site-title {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* Center Icons */
 .nav-icons {
   display: flex;
-  gap: 35px;
-  font-size: 26px;
+  gap: 110px;
+  font-size: 30px;
 }
 
 .nav-icons a {
