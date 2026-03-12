@@ -82,3 +82,20 @@
   color: #2e3b55;
 }
 
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background:  #2e3b55;
+  color: white;
+}
+
+.footer{
+   text-align: center;
+  padding: 15enpx;
+  background:  #2e3b55;
+  color: white;
+  margin-top :29px;
+}

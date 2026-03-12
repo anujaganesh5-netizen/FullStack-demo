@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+
+    <title>InterviewHub</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,64 +15,137 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
+
   <body>
+    <!-- NAVBAR -->
+
     <header class="navbar">
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
+        <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
+      </div>
 
-    <!-- Left: Logo + Title -->
-    <div class="left-section">
-      <img src="./assets/logo.jpeg" alt="Logo" />
-      <h3 class="site-title">InterviewHub</h3>
-    </div>
+      <!-- Center: Icons -->
+      <div class="nav-icons">
+        <a href="./index.html" class="active">
+          <i class="fa-solid fa-house"></i>
+        </a>
 
-    <!-- Center: Icons -->
-    <div class="nav-icons">
-      <a href="../index.html"class="active">
-        <i class="fa-solid fa-house"></i>
-      </a>
+        <a href="./pages/job.html">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
 
-      <a href="./pages/job.html">
-        <i class="fa-solid fa-briefcase"></i>
-      </a>
+        <a href="./pages/resume.html">
+          <i class="fa-solid fa-file-image"></i>
+        </a>
 
-      <a href="./pages/resume.html">
-        <i class="fa-solid fa-file-image"></i>
-      </a>
+        <a href="./pages/question.html">
+          <i class="fa-solid fa-clipboard-question"></i>
+        </a>
 
-      <a href="./pages/question.html">
-        <i class="fa-solid fa-clipboard-question"></i>
-      </a>
+        <a href="./pages/profile.html">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
 
-      <a href="./pages/profile.html">
-        <i class="fa-solid fa-circle-user"></i>
-      </a>
-    </div>
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <h2>Hello, User</h2>
+        <a href="./login.html" class="login-btn">Login</a>
+      </div>
+    </header>
 
-    <!-- Right: Hello + Login -->
-    <div class="right-section">
-      <h2>Hello, User</h2>
-      <a href="./pages/login.html" class="login-btn">Login</a>
-    </div>
+    <!-- HERO -->
 
-  </header>
-    <section class="animation-box">
-      <img src="./assets/Animation.png" alt="img" />
+    <section class="hero">
+      <h1>WELCOME TO INTERVIEWHUB</h1>
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4D12AQFR8MX9izyAsw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705646532887?e=2147483647&v=beta&t=bfNcPvYUm04qhoJG6OjOHHqBGMRVbVhBBRJivheZyAQ"
+      />
     </section>
-    <section class="about">
-      <h3 >About the website:</h3>
-      <p>
-        Our platform is designed to simplify the job search process and help job
-        seekers save valuable time. Users can easily explore and apply for
-        relevant job vacancies with just a few clicks. The platform also allows
-        candidates to customize their resumes according to specific job
-        requirements, increasing their chances of getting shortlisted. In
-        addition, we provide interview preparation support to help users build
-        confidence and perform better during interviews. By bringing all these
-        features together in one place, we make the job application process
-        faster, easier, and more efficient.
-      </p>
+
+    <!-- ABOUT -->
+
+    <section class="about" >
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg"
+            alt="About InterviewHub"
+          />
+        </div>
+
+        <div class="about-text">
+          <h2>About InterviewHub</h2>
+
+          <p>
+            InterviewHub helps students and professionals learn about different
+            job roles and practice interview questions to improve their career
+            opportunities. Our platform provides career insights, interview
+            preparation resources, and job role guidance to help users succeed
+            in their professional journey.
+          </p>
+        </div>
+      </div>
     </section>
-    <script src="./js/script.js"></script>
-    <script src="./js/login.js"></script>
+
+    <!-- JOB ROLES -->
+<section class="jobs"> <h2>Popular Job Roles</h2>
+   <div class="job-grid">
+
+  <div class="job-card">
+    <i class="fa-solid fa-chart-line job-icon"></i>
+    <h3>Business Analyst</h3>
+    <p>Analyze business data and improve company performance.</p>
+    <a href="./pages/Business Analyst.html">View Role</a>
+  </div>
+
+  <div class="job-card">
+    <i class="fa-solid fa-compass-drafting job-icon"></i>
+    <h3>CAD Drafter</h3>
+    <p>Create technical engineering drawings using CAD software.</p>
+    <a href="./pages/CAD Drafter.html">View Role</a>
+  </div>
+
+  <div class="job-card">
+    <i class="fa-solid fa-headset job-icon"></i>
+    <h3>Customer Care Analyst</h3>
+    <p>Support customers and improve service experience.</p>
+    <a href="./pages/Customer Care Analyst.html ">View Role</a>
+  </div>
+</section>
+</div>
+
+    <!-- FEATURES -->
+<section class="features"> <h2>Platform Features</h2>
+    <div class="feature-grid">
+
+  <div class="feature-card">
+    <i class="fa-solid fa-user-tie feature-icon"></i>
+    <h3>Interview Preparation</h3>
+    <p>Practice role-based interview questions.</p>
+  </div>
+
+  <div class="feature-card">
+    <i class="fa-solid fa-compass feature-icon"></i>
+    <h3>Explore Careers</h3>
+    <p>Understand responsibilities of different job roles.</p>
+  </div>
+
+  <div class="feature-card">
+    <i class="fa-solid fa-brain feature-icon"></i>
+    <h3>Skill Development</h3>
+    <p>Improve knowledge and prepare for job interviews.</p>
+  </div>
+</section>
+</div>
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 InterviewHub | Career Preparation Platform</p>
+    </footer>
   </body>
 </html>
