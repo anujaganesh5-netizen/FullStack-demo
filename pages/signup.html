@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Signup</title>
-  <link rel="stylesheet" href="../css/signup.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,9 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-<header class="navbar">
+  </head>
+  <body>
+    <header class="navbar">
       <!-- Left: Logo + Title -->
       <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
@@ -22,50 +22,51 @@
 
       <!-- Center: Icons -->
       <div class="nav-icons">
-        <a href="../index.html">
-          <i class="fa-solid fa-house"></i>
-        </a>
+        <a href="../index.html"> Home </a>
 
-        <a href="./job.html">
-        <i class="fa-solid fa-briefcase"></i>
-      </a>
+        <a href="./job.html"> Job </a>
 
-        <a href="./resume.html">
-          <i class="fa-solid fa-file-image"></i>
-        </a>
+        <a href="./resume.html"> Resume </a>
 
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i>
-        </a>
-
-        <a href="./profile.html" >
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        <a href="./question.html"> Question </a>
       </div>
 
       <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn">Login</a>
+        <a class="profile" href="./profile.html"> Profile </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
       </div>
     </header>
-<div class="container">
-  <form id="signupForm">
-    <h2>Create Account</h2>
+    <div class="container">
+      <form id="signupForm">
+        <h2>Create Account</h2>
 
-    <input type="text" id="signupName" placeholder="Full Name" required>
-    <input type="email" id="signupEmail" placeholder="Email" required>
-    <input type="password" id="signupPassword" placeholder="Password" required>
-    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <input type="text" id="signupName" placeholder="Full Name" required />
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input
+          type="password"
+          id="signupPassword"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
 
-    <button type="submit">Signup</button>
+        <button type="submit">Signup</button>
 
-    <p>Already have an account?
-      <a href="login.html">Login</a>
-    </p>
-  </form>
-</div>
-
-<script src="script.js"></script>
-</body>
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </form>
+    </div>
+    <script src="../js/name & logout.js" type="module"></script>
+    <script src="../js/signup.js" type="module"></script>
+  </body>
 </html>

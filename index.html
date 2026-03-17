@@ -31,37 +31,50 @@
       <!-- Center: Icons -->
       <div class="nav-icons">
         <a href="./index.html" class="active">
-          <i class="fa-solid fa-house"></i>
+                Home
         </a>
 
         <a href="./pages/job.html">
-          <i class="fa-solid fa-briefcase"></i>
+         Job
         </a>
 
         <a href="./pages/resume.html">
-          <i class="fa-solid fa-file-image"></i>
+          Resume
         </a>
 
         <a href="./pages/question.html">
-          <i class="fa-solid fa-clipboard-question"></i>
+         Question
         </a>
 
-        <a href="./pages/profile.html">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+       
       </div>
 
       <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn">Login</a>
+         <a class="profile"href="./pages/profile.html" >
+          Profile
+        </a>
+        <h3 id="navUser">Hello, User</h3>
+<a href="./pages/login.html" class="login-btn" id="loginBtn">Login</a>
+<button type="button" id="logoutBtn" class="login-btn">
+  Logout
+</button>
       </div>
     </header>
 
     <!-- HERO -->
 
     <section class="hero">
-      <h1>WELCOME TO INTERVIEWHUB</h1>
+      <h1 id="welcomeText">Hello User
+ </h1>
+ <lord-icon 
+ class="icon"
+
+    src="https://cdn.lordicon.com/ldpyyqjp.json"
+    trigger="hover"
+    style="width:50px;height:200px;">
+</lord-icon>
+      <h2 >WELCOME TO INTERVIEWHUB</h2>
       <img
         src="https://media.licdn.com/dms/image/v2/D4D12AQFR8MX9izyAsw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705646532887?e=2147483647&v=beta&t=bfNcPvYUm04qhoJG6OjOHHqBGMRVbVhBBRJivheZyAQ"
       />
@@ -147,5 +160,7 @@
     <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="./js/name & logout.js" type="module"></script>
   </body>
 </html>

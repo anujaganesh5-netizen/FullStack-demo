@@ -1,116 +1,40 @@
+import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 
-//    🔐 SIGNUP SECTION (With Confirm Password Validation)
+const firebaseConfig = {
+  apiKey: "AIzaSyBCRO_Fpy_-dt8s5BgYXaFLv56n1UPGBMY",
+  authDomain: "full-stack-project-8a514.firebaseapp.com",
+  projectId: "full-stack-project-8a514",
+  storageBucket: "full-stack-project-8a514.firebasestorage.app",
+  messagingSenderId: "364401732468",
+  appId: "1:364401732468:web:cb5dd6f30c5e8ee2a39a21",
+};
 
+// Only initialize if no apps exist
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+const auth = getAuth(app);
 
-const signupForm = document.getElementById("signupForm");
+const form = document.getElementById("loginForm");
 
-if (signupForm) {
-  signupForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    const name = document.getElementById("signupName").value;
-    const email = document.getElementById("signupEmail").value;
-    const password = document.getElementById("signupPassword").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
 
-    // Check if passwords match
-    if (password !== confirmPassword) {
-      alert("❌ Passwords do not match!");
-      return;
-    }
-
-    const user = { name, email, password };
-
-    localStorage.setItem(email, JSON.stringify(user));
-
-    alert("✅ Signup Successful! Please Login.");
-    window.location.href = "./pages/login.html";
-  });
-}
-
-
-
-//    🔑 LOGIN SECTION (Remember Me Required)
-
-
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-  loginForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
-    const rememberMe = document.getElementById("rememberMe").checked;
-
-    // Require Remember Me checkbox
-    if (!rememberMe) {
-      alert("⚠ Please check 'Remember Me' to login.");
-      return;
-    }
-
-    const storedUser = JSON.parse(localStorage.getItem(email));
-
-    if (storedUser && storedUser.password === password) {
-      localStorage.setItem("loggedInUser", storedUser.name);
-
-      // Redirect to your existing home page
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      alert("Login Successful");
+      const details = {
+        email : email
+      }
+      localStorage.setItem('user',JSON.stringify(details))
       window.location.href = "../index.html";
-    } else {
-      alert("❌ Invalid Email or Password");
-    }
-  });
-}
-
-
-
-//    🏠 PROTECT INDEX PAGE (Prevent Manual Access)
-
-
-if (window.location.pathname.includes("../index.html")) {
-  const user = localStorage.getItem("loggedInUser");
-
-  if (!user) {
-    window.location.href = "./pages/login.html";
-  }
-}
-
-
-
-//    👋 SHOW USERNAME IN INDEX PAGE
-
-
-const welcomeUser = document.getElementById("welcomeUser");
-
-if (welcomeUser) {
-  const name = localStorage.getItem("loggedInUser");
-  welcomeUser.textContent = "Welcome, " + name + " 👋";
-}
-
-
-//    🚪 LOGOUT FUNCTION
-
-
-function logout() {
-  localStorage.removeItem("loggedInUser");
-  window.location.href = "./pages/login.html";
-}
-
-
-
-//    🔁 FORGOT PASSWORD FUNCTION
-
-
-function forgotPassword() {
-  const email = prompt("Enter your registered email:");
-
-  if (!email) return;
-
-  const storedUser = JSON.parse(localStorage.getItem(email));
-
-  if (storedUser) {
-    alert("🔐 Your password is: " + storedUser.password);
-  } else {
-    alert("❌ Email not found!");
-  }
-}
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});

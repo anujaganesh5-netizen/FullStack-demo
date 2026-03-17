@@ -1,12 +1,10 @@
-
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding-top: 120px;
   overflow-y: auto;
   height: 100vh;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
 
 .job-container {
   width: 75%;
@@ -53,7 +51,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
-
 }
 
 .next-page p {
@@ -119,4 +116,3 @@ body {
   margin-top: 10px;
   padding-left: 20px;
 }
-

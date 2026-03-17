@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Wireframe</title>
     <link rel="stylesheet" href="../css/CAD Drafter.css" />
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-       <header class="navbar">
+    <header class="navbar">
       <!-- Left: Logo + Title -->
       <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
@@ -24,31 +24,21 @@
 
       <!-- Center: Icons -->
       <div class="nav-icons">
-        <a href="../index.html" >
-          <i class="fa-solid fa-house"></i>
-        </a>
+        <a href="../index.html"> Home </a>
 
-        <a href="./job.html">
-          <i class="fa-solid fa-briefcase"></i>
-        </a>
+        <a href="./job.html"> Job </a>
 
-        <a href="./resume.html">
-          <i class="fa-solid fa-file-image"></i>
-        </a>
+        <a href="./resume.html"> Resume </a>
 
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i>
-        </a>
-
-        <a href="./profile.html">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        <a href="./question.html"> Question </a>
       </div>
 
       <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn">Login</a>
+        <a class="profile" href="./profile.html"> Profile </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
       </div>
     </header>
     <section class="job-container">
@@ -63,7 +53,7 @@
 
       <div class="right-content">
         <h3>Use AI to assess how you fit</h3>
-        <p class="sub-text">   
+        <p class="sub-text">
           anywhere, and can change their plans at any time.
         </p>
 
@@ -109,10 +99,10 @@
           <h5>Netflix</h5></a
         >
       </div>
-      
     </div>
-      <footer class="footer">
+    <footer class="footer">
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
+    <script src="../js/name & logout.js" type="module"></script>
   </body>
 </html>

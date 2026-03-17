@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Questions</title>
-     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/question.css" />
 
     <link
@@ -15,31 +15,30 @@
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar" >
+      <!-- Left: Logo + Title -->
       <div class="left-section">
-        <img src="../assets/logo.jpeg" />
+        <img src="../assets/logo.jpeg" alt="Logo" />
         <h3 class="site-title">InterviewHub</h3>
       </div>
 
-      <div class="nav-icons">
-        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+      <!-- Center: Icons -->
+      <div class="nav-icons" id="nv">
+        <a href="../index.html"> Home </a>
 
-        <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="./job.html"> Job </a>
 
-        <a href="./resume.html"><i class="fa-solid fa-file-image"></i></a>
+        <a href="./resume.html"> Resume </a>
 
-        <a href="./question.html" class="active">
-          <i class="fa-solid fa-clipboard-question"></i>
-        </a>
-
-        <a href="./profile.html">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        <a href="./question.html" class="active"> Question </a>
       </div>
 
+      <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn">Login</a>
+        <a class="profile" href="./profile.html"> Profile </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
       </div>
     </header>
 
@@ -108,8 +107,10 @@
     </div>
 
     <script src="../js/question.js"></script>
-      <footer>
+    <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
+    <script src="../js/auth.js" ></script>
+    <script src="../js/name & logout.js" type="module"></script>
   </body>
 </html>

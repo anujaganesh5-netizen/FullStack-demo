@@ -15,42 +15,46 @@
     />
   </head>
   <body>
-       <header class="navbar">
+    <header class="navbar">
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
+        <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
+      </div>
 
-    <!-- Left: Logo + Title -->
-    <div class="left-section">
-      <img src="../assets/logo.jpeg" alt="Logo" />
-      <h3 class="site-title">InterviewHub</h3>
-    </div>
+      <!-- Center: Icons -->
+      <div class="nav-icons">
+        <a href="../index.html" >
+         Home
+        </a>
 
-    <!-- Center: Icons -->
-    <div class="nav-icons">
-      <a href="../index.html">
-        <i class="fa-solid fa-house"></i>
-      </a>
+        <a href="./job.html">
+          Job
+        </a>
 
-      <a href="./job.html">
-        <i class="fa-solid fa-briefcase"></i>
-      </a>
+        <a href="./resume.html">
+        Resume
+        </a>
 
-      <a href="./resume.html">
-        <i class="fa-solid fa-file-image"></i>
-      </a>
+        <a href="./question.html">
+        Question
+        </a>
 
-      <a href="./question.html">
-        <i class="fa-solid fa-clipboard-question"></i>
-      </a>
+        
+      </div>
 
-      <a href="./profile.html">
-        <i class="fa-solid fa-circle-user"></i>
-      </a>
-    </div>
-
-    <!-- Right: Hello + Login -->
-    <div class="right-section">
-      <h2>Hello, User</h2>
-      <a href="./login.html" class="login-btn">Login</a>
-    </div>
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <a class="profile"  href="./profile.html">
+          Profile
+        </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">
+  Logout
+</button>
+      </div>
+    </header>
 
   </header>
     <section class="job-container">
@@ -122,5 +126,6 @@
    <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
+     <script src="../js/name & logout.js" type="module"></script>
   </body>
 </html>

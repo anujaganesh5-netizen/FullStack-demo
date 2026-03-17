@@ -20,43 +20,43 @@
 
   <body>
     <header class="navbar">
+      <!-- Left: Logo + Title -->
       <div class="left-section">
-        <img src="../assets/logo.jpeg" />
+        <img src="../assets/logo.jpeg" alt="Logo" />
         <h3 class="site-title">InterviewHub</h3>
       </div>
 
+      <!-- Center: Icons -->
       <div class="nav-icons">
-        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html"> Home </a>
 
-        <a href="./job.html"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="./job.html"> Job </a>
 
-        <a href="./resume.html"><i class="fa-solid fa-file-image"></i></a>
+        <a href="./resume.html"> Resume </a>
 
-        <a href="./question.html" class="active">
-          <i class="fa-solid fa-clipboard-question"></i>
-        </a>
-
-        <a href="./profile.html">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        <a href="./question.html"> Question </a>
       </div>
 
+      <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn">Login</a>
+        <a class="profile" href="./profile.html"> Profile </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
       </div>
     </header>
 
     <div class="container">
-      <button class="back-btn" onclick="history.back()"> Back</button>
+      <button class="back-btn" onclick="history.back()">Back</button>
 
       <h2>Interview Questions</h2>
 
       <div id="questionsContainer"></div>
     </div>
-  <footer>
+    <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
+    <script src="../js/name & logout.js" type="module"></script>
     <script src="../js/questionsList.js"></script>
   </body>
 </html>

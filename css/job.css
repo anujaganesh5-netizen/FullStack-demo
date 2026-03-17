@@ -47,7 +47,11 @@ main {
   font-size: x-large;
   text-align: start;
 }
-
+aside .submit {
+  border-radius: 30px;
+  background: #2e3b55;
+  color: white;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +91,6 @@ main {
 .card a {
   text-decoration: none;
   color: black;
-
 }
 
 .card a:hover {
@@ -108,12 +111,12 @@ main {
 }
 
 .card p:hover {
-  color: #E67E22;
+  color: #e67e22;
   text-decoration: none;
 }
 
 .card h4:hover {
-  color: #E67E22;
+  color: #e67e22;
   text-decoration: none;
 }
 

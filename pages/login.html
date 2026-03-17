@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Login</title>
-  <link rel="stylesheet" href="../css/login.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,9 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
- <header class="navbar">
+  </head>
+  <body>
+    <header class="navbar">
       <!-- Left: Logo + Title -->
       <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
@@ -22,60 +22,55 @@
 
       <!-- Center: Icons -->
       <div class="nav-icons">
-        <a href="../index.html">
-          <i class="fa-solid fa-house"></i>
-        </a>
+        <a href="../index.html"> Home </a>
 
-        <a href="./job.html">
-          <i class="fa-solid fa-briefcase"></i>
-        </a>
+        <a href="./job.html"> Job </a>
 
-        <a href="./resume.html">
-          <i class="fa-solid fa-file-image"></i>
-        </a>
+        <a href="./resume.html"> Resume </a>
 
-        <a href="./question.html">
-          <i class="fa-solid fa-clipboard-question"></i>
-        </a>
-
-        <a href="./profile.html" >
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        <a href="./question.html"> Question </a>
       </div>
 
       <!-- Right: Hello + Login -->
       <div class="right-section">
-        <h2>Hello, User</h2>
-        <a href="./login.html" class="login-btn" >Login</a>
+        <a class="profile" href="./profile.html"> Profile </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn"  style="display: none;">Logout</button>
       </div>
     </header>
+    <div class="container">
+      <form id="loginForm">
+        <h2>WELCOME TO LOGIN</h2>
+        <h3>Login your account</h3>
 
-<div class="container">
-  <form id="loginForm">
-    <h2>WELCOME TO LOGIN</h2>
-    <h3>Login  your account</h3>
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Password"
+          required
+        />
 
-    <input type="email" id="loginEmail" placeholder="Email" required>
-    <input type="password" id="loginPassword" placeholder="Password" required>
+        <!-- Remember Me -->
+        <div class="options">
+          <label>
+            <input type="checkbox" id="rememberMe" />
+            Remember Me
+          </label>
+          <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+        </div>
 
-    <!-- Remember Me -->
-    <div class="options">
-      <label>
-        <input type="checkbox" id="rememberMe">
-        Remember Me
-      </label>
-      <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+        <button type="submit">Login</button>
+        <p>Or</p>
+
+        <p>
+          Don't have an account?
+          <a href="./signup.html"><span>Signup</span></a>
+        </p>
+      </form>
     </div>
-
-    <button type="submit">Login</button>
-    <p >Or </p>
-
-    <p>Don't have an account?
-      <a href="./signup.html"><span>Signup</span></a>
-    </p>
-  </form>
-</div>
-
-<script src="../js/login.js"></script>
-</body>
+    <script src="../js/name & logout.js"></script>
+    <script src="../js/login.js" type="module"></script>
+  </body>
 </html>
