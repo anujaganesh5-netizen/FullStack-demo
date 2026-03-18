@@ -4,62 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job page</title>
+
     <link rel="stylesheet" href="../css/job.css" />
     <link rel="stylesheet" href="../css/header.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+
   <body>
-     <header class="navbar">
+    <header class="navbar">
       <!-- Left: Logo + Title -->
       <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
         <h3 class="site-title">InterviewHub</h3>
       </div>
 
-      <!-- Center: Icons -->
+      <!-- Center: Navigation -->
       <div class="nav-icons">
-        <a href="../index.html" >
-         Home
-        </a>
-
-        <a href="./job.html" class="active">
-          Job
-        </a>
-
-        <a href="./resume.html">
-        Resume
-        </a>
-
-        <a href="./question.html">
-        Question
-        </a>
-
-        
+        <a href="../index.html">Home</a>
+        <a href="./job.html" class="active">Jobs</a>
+        <a href="./resume.html">Resume Builder</a>
+        <a href="./question.html">Interview Prep</a>
       </div>
 
-      <!-- Right: Hello + Login -->
+      <!-- Right: User Section -->
       <div class="right-section">
-        <a class="profile"  href="./profile.html">
-          Profile
+        <a class="profile" href="./profile.html">
+          <i class="fa-regular fa-circle-user"></i>
         </a>
         <h3 id="navUser">Hello, User</h3>
         <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
-        <button type="button" id="logoutBtn" class="login-btn">
-  Logout
-</button>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
       </div>
-    </header>lass="site-title">InterviewHub</h3>
-  
+    </header>
 
     <main class="main">
+      <h2 class="page-heading">
+        Your Career Starts Here
+        <lord-icon
+          src="https://cdn.lordicon.com/uuulnrwh.json"
+          class="icon"
+          trigger="loop"
+          colors="primary:#17171c,secondary:#e67e22,tertiary:#97675d,quaternary:#2e3b55"
+          style="width: 70px; height: 70px"
+        >
+        </lord-icon>
+      </h2>
+
+      <!-- Sidebar Filters -->
       <aside class="sidebar">
         <ul>
           <li>Company</li>
-          <select name="Company" id="companyFilter" class="Dropdown" >
-            <option value="" >~Select the Company~</option>
+          <select id="companyFilter" class="Dropdown">
+            <option value="">~Select the Company~</option>
             <option value="Netflix">Netflix</option>
             <option value="Wanderlog">Wanderlog</option>
             <option value="Plaid">Plaid</option>
@@ -83,8 +83,8 @@
           </select>
 
           <li>Location</li>
-          <select name="location" id="locationFilter" class="Dropdown" >
-            <option value="" >~Select the Location~</option>
+          <select id="locationFilter" class="Dropdown">
+            <option value="">~Select the Location~</option>
             <option value="United States">United States</option>
             <option value="San Francisco,CA">San Francisco,CA</option>
             <option value="Los Analyst,CA">Los Analyst,CA</option>
@@ -95,8 +95,8 @@
           </select>
 
           <li>Experience</li>
-          <select name="experience" id="experienceFilter" class="Dropdown">
-            <option value="" >~Select your Experience~</option>
+          <select id="experienceFilter" class="Dropdown">
+            <option value="">~Select your Experience~</option>
             <option>Fresher</option>
             <option>1-2 years</option>
             <option>2-3 years</option>
@@ -107,8 +107,8 @@
           </select>
 
           <li>Remote</li>
-          <select name="work mode" id="modeFilter" class="Dropdown" >
-            <option value="" >~Select the Work Mode~</option>
+          <select id="modeFilter" class="Dropdown">
+            <option value="">~Select the Work Mode~</option>
             <option>Work from office</option>
             <option>Hybrid</option>
             <option>Remote</option>
@@ -118,8 +118,8 @@
         </ul>
       </aside>
 
+      <!-- Job Cards -->
       <section class="content">
-        <!-- Netflix -->
         <div class="card">
           <a href="./netflix.html">
             <img src="../assets/Netflix.png" alt="img" />
@@ -135,7 +135,6 @@
           </a>
         </div>
 
-        <!-- Wanderlog -->
         <div class="card">
           <a href="./wanderlog.html">
             <img src="../assets/Wandarlo.png" alt="img" />
@@ -150,7 +149,6 @@
           </a>
         </div>
 
-        <!-- Plaid -->
         <div class="card">
           <a href="./plaid.html">
             <img src="../assets/Plaid (1).png" alt="img" />
@@ -361,10 +359,13 @@
         </div>
       </section>
     </main>
-  <footer>
+
+    <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
-   <script src="../js/jobfilter.js" ></script>
-   <script src="../js/name & logout.js" type="module"></script>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../js/jobfilter.js"></script>
+    <script src="../js/name & logout.js" type="module"></script>
   </body>
 </html>

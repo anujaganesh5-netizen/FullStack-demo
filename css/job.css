@@ -6,15 +6,14 @@ main {
   display: flex;
   margin-top: 0px;
 }
-.background {
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  filter: blur(4px);
+
+.page-heading {
+  position: absolute;
+  left: 560px; /* adjust spacing */
+  top: 120px; /* adjust below navbar */
+  color: #111;
+  font-size: 28px;
+  font-weight: 600;
 }
 .sidebar {
   height: 100vh;
@@ -60,7 +59,7 @@ aside .submit {
   padding: 30px;
   gap: 60px;
   margin-left: 300px;
-  margin-top: 105px;
+  margin-top: 205px;
   margin-bottom: 50px;
 }
 .card {
@@ -138,4 +137,7 @@ aside .submit {
   border: 3px solid black;
   background-color: rgb(237, 249, 255);
   font-size: medium;
+}
+.icon {
+  top: 25px;
 }

@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="navbar" >
+    <header class="navbar">
       <!-- Left: Logo + Title -->
       <div class="left-section">
         <img src="../assets/logo.jpeg" alt="Logo" />
@@ -26,16 +26,18 @@
       <div class="nav-icons" id="nv">
         <a href="../index.html"> Home </a>
 
-        <a href="./job.html"> Job </a>
+        <a href="./job.html"> Jobs </a>
 
-        <a href="./resume.html"> Resume </a>
+        <a href="./resume.html"> Resume Builder</a>
 
-        <a href="./question.html" class="active"> Question </a>
+        <a href="./question.html" class="active"> Interview Prep</a>
       </div>
 
       <!-- Right: Hello + Login -->
       <div class="right-section">
-        <a class="profile" href="./profile.html"> Profile </a>
+        <a class="profile" href="./profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
         <h3 id="navUser">Hello, User</h3>
         <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
         <button type="button" id="logoutBtn" class="login-btn">Logout</button>
@@ -43,7 +45,17 @@
     </header>
 
     <div class="skills-wrapper">
-      <h2 class="page-heading">Prepare your interview from it</h2>
+      <h2 class="page-heading">
+        Prepare your interview from it
+        <lord-icon
+          class="icon"
+          src="https://cdn.lordicon.com/epzxzayu.json"
+          trigger="loop"
+          colors="primary:#2e3b55"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon>
+      </h2>
 
       <div class="skill-card frontend">
         <h2>Frontend</h2>
@@ -110,7 +122,8 @@
     <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
-    <script src="../js/auth.js" ></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../js/auth.js"></script>
     <script src="../js/name & logout.js" type="module"></script>
   </body>
 </html>

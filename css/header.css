@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  /* font-family: 'Inter', sans-serif; */
 }
+/* h1, h2, h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+} */
 
 /* Navbar */
 .navbar {
@@ -53,14 +57,9 @@
   color: #e67e22;
   transform: scale(1.2);
 }
-.profile {
+.fa-regular.fa-circle-user {
+  font-size: 30px;
   color: white;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-.profile:hover {
-  color: #e67e22;
-  transform: scale(1.2);
 }
 
 /* Active Page Icon */
@@ -81,7 +80,6 @@
   text-decoration: none;
   color: white;
   background-color: #2e3b55;
-
   border: 1px solid white;
   padding: 6px 14px;
   border-radius: 5px;

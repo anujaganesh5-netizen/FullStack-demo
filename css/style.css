@@ -5,12 +5,14 @@ body {
 }
 /* HERO */
 
-.hero img {
+.hero video {
   margin-top: 50px;
-  height: 600px;
-  width: 1000px;
-  margin-left: 250px;
+  /* height: 540px; */
+  width: 1400px;
+  margin-left: 50px;
   margin-bottom: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.447);
+  border-radius: 12px;
 }
 .hero h1 {
   margin-top: 150px;
