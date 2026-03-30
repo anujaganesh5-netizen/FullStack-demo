@@ -7,11 +7,12 @@ body {
   height: 100vh;
 }
 
-.container {
+.container { 
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
-  width: 320px;
+  margin-top: 60px;
+  width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
