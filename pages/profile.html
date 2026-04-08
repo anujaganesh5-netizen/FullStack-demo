@@ -50,51 +50,99 @@
       </div>
 
       <div class="profile-info">
-        <div class="profile-pic">
+        <!-- <div class="profile-pic">
           <img src="../assets/me.jpeg" alt="Profile" />
-        </div>
+        </div> -->
 
         <div class="profile-text">
-          <h1>Anuja Ganesh <span>She/Her</span></h1>
-          <p class="text">Student at Freshworks STS Software Academy</p>
-          <p class="location">
-            Chennai, Tamil Nadu, India · <a href="#">Contact info</a>
+          <h1 id="profileName">User Name <span id="profileGender"></span></h1>
+          <p class="text" id="profileBio">Your bio</p>
+          <p class="location" id="profileLocation">
+            Location · <a href="#">Contact info</a>
           </p>
-          <p class="connections">216 connections</p>
+          <!-- <p class="connections" id="profileConnections">0 experience</p> -->
         </div>
 
         <div class="company">
-          <p>Freshworks STS Software Academy</p>
+          <p id="profileCompany">Company Name</p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <h2>Education</h2>
-      <p><strong>Freshworks STS Software Academy</strong></p>
-      <p>Web Development · Jul 2025 – Apr 2026</p>
-      <br />
-      <p><strong>Amala Convent Girls Hr. Sec School</strong></p>
-      <p>12th Completed · Jun 2019 – Mar 2025</p>
+      <p id="education1"></p>
+      <p id="education2"></p>
     </section>
 
     <section class="section">
       <h2>Skills</h2>
-      <p>HTML · CSS · Python</p>
+      <p id="skills"></p>
     </section>
 
     <section class="section">
       <h2>Experience</h2>
-      <p>-Add your Job-</p>
+      <p id="experience"></p>
     </section>
+    <!--  EDIT BUTTON -->
+    <button id="editBtn">Edit Profile</button>
+    <div id="editForm" class="edit-form">
+      <div class="form-box">
+        <span id="closeForm" class="close-btn">&times;</span>
+
+        <h2>Edit Profile</h2><br>
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="editName" />
+        </div>
+
+        <div class="form-group">
+          <label>Bio</label>
+          <input type="text" id="editBio" />
+        </div>
+
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" id="editLocation" />
+        </div>
+
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" id="editCompany" />
+        </div>
+
+        <div class="form-group">
+          <label>Education 1</label>
+          <input type="text" id="editEducation1" />
+        </div>
+
+        <div class="form-group">
+          <label>Education 2</label>
+          <input type="text" id="editEducation2" />
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+          <input type="text" id="editSkills" />
+        </div>
+
+        <div class="form-group">
+          <label>Experience</label>
+          <input type="text" id="editExperience" />
+        </div>
+
+        <button id="saveBtn">Save</button>
+      </div>
+    </div>
+
     <footer>
       <p>© 2026 InterviewHub | Career Preparation Platform</p>
     </footer>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-
-
+    <script src="../js/profile.js" type="module"></script>
     <script type="module" src="../js/firebase.js"></script>
-<script type="module" src="../js/name-logout.js"></script>
-<script type="module" src="../js/login-redirect.js"></script>
+    <script type="module" src="../js/name-logout.js"></script>
+    <script type="module" src="../js/login-redirect.js"></script>
   </body>
 </html>
