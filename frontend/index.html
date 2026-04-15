@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>InterviewHub</title>
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <!-- Left -->
+      <div class="left-section">
+        <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
+      </div>
+
+      <!-- Center -->
+      <div class="nav-icons">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./pages/job.html">Jobs</a>
+        <a href="./pages/resume.html">Resume Builder</a>
+        <a href="./pages/question.html">Interview Prep</a>
+      </div>
+
+      <!-- Right -->
+      <div class="right-section">
+        <a class="profile" href="./pages/profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+
+        <h3 id="navUser">Hello, User</h3>
+
+        <a href="./pages/login.html" class="login-btn" id="loginBtn"> Login </a>
+
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 id="welcomeText">Hello User</h1>
+
+      <lord-icon
+        class="icon"
+        src="https://cdn.lordicon.com/ldpyyqjp.json"
+        trigger="loop"
+        style="width: 50px; height: 200px"
+      >
+      </lord-icon>
+
+      <h2>WELCOME TO INTERVIEWHUB</h2>
+
+      <video autoplay muted loop playsinline>
+        <source src="./assets/home_video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg"
+            alt="About InterviewHub"
+          />
+        </div>
+
+        <div class="about-text">
+          <h2>About InterviewHub</h2>
+          <p>
+            InterviewHub helps students and professionals learn about different
+            job roles and practice interview questions to improve their career
+            opportunities. Our platform provides career insights, interview
+            preparation resources, and job role guidance to help users succeed
+            in their professional journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOB ROLES -->
+    <section class="jobs">
+      <h2>Popular Job Roles</h2>
+
+      <div class="job-grid">
+        <div class="job-card">
+          <i class="fa-solid fa-chart-line job-icon"></i>
+          <h3>Business Analyst</h3>
+          <p>Analyze business data and improve company performance.</p>
+          <a href="./pages/Business Analyst.html">View Role</a>
+        </div>
+
+        <div class="job-card">
+          <i class="fa-solid fa-compass-drafting job-icon"></i>
+          <h3>CAD Drafter</h3>
+          <p>Create technical engineering drawings using CAD software.</p>
+          <a href="./pages/CAD Drafter.html">View Role</a>
+        </div>
+
+        <div class="job-card">
+          <i class="fa-solid fa-headset job-icon"></i>
+          <h3>Customer Care Analyst</h3>
+          <p>Support customers and improve service experience.</p>
+          <a href="./pages/Customer Care Analyst.html">View Role</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <h2>Platform Features</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fa-solid fa-user-tie feature-icon"></i>
+          <h3>Interview Preparation</h3>
+          <p>Practice role-based interview questions.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-solid fa-compass feature-icon"></i>
+          <h3>Explore Careers</h3>
+          <p>Understand responsibilities of different job roles.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-solid fa-brain feature-icon"></i>
+          <h3>Skill Development</h3>
+          <p>Improve knowledge and prepare for job interviews.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 InterviewHub | Career Preparation Platform</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+   
+    <script type="module" src="./js/firebase.js"></script>
+<script type="module" src="./js/name-logout.js"></script>
+<script type="module" src="./js/login-redirect.js"></script>
+  </body>
+</html>

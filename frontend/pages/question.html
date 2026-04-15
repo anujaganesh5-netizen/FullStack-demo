@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Questions</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/question.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
+        <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
+      </div>
+
+      <!-- Center: Icons -->
+      <div class="nav-icons" id="nv">
+        <a href="../index.html"> Home </a>
+
+        <a href="./job.html"> Jobs </a>
+
+        <a href="./resume.html"> Resume Builder</a>
+
+        <a href="./question.html" class="active"> Interview Prep</a>
+      </div>
+
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <a class="profile" href="./profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
+      </div>
+    </header>
+
+    <div class="skills-wrapper">
+      <h2 class="page-heading">
+        Prepare your interview from it
+        <lord-icon
+          class="icon"
+          src="https://cdn.lordicon.com/epzxzayu.json"
+          trigger="loop"
+          colors="primary:#2e3b55"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon>
+      </h2>
+
+      <div class="skill-card frontend">
+        <h2>Frontend</h2>
+
+        <ul>
+          <li onclick="openQuestions(1)">
+            <i class="fa-brands fa-html5"></i> HTML
+          </li>
+
+          <li onclick="openQuestions(2)">
+            <i class="fa-brands fa-css3-alt"></i> CSS
+          </li>
+
+          <li onclick="openQuestions(3)">
+            <i class="fa-brands fa-js"></i> JavaScript
+          </li>
+
+          <li onclick="openQuestions(4)">
+            <i class="fa-brands fa-react"></i> React.js
+          </li>
+
+          <li onclick="openQuestions(5)">
+            <i class="fa-solid fa-cloud"></i> REST API
+          </li>
+
+          <li onclick="openQuestions(6)">
+            <i class="fa-solid fa-database"></i> JSON
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-card backend">
+        <h2>Backend</h2>
+
+        <ul>
+          <li onclick="openQuestions(7)">
+            <i class="fa-brands fa-python"></i> Python
+          </li>
+
+          <li onclick="openQuestions(8)">
+            <i class="fa-solid fa-code"></i> TypeScript
+          </li>
+
+          <li onclick="openQuestions(9)">
+            <i class="fa-brands fa-node-js"></i> Node.js
+          </li>
+
+          <li onclick="openQuestions(10)">
+            <i class="fa-brands fa-php"></i> PHP
+          </li>
+
+          <li onclick="openQuestions(11)">
+            <i class="fa-solid fa-database"></i> SQL
+          </li>
+
+          <li onclick="openQuestions(12)">
+            <i class="fa-solid fa-server"></i> MySQL
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="../js/question.js"></script>
+    <footer>
+      <p>© 2026 InterviewHub | Career Preparation Platform</p>
+    </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/name-logout.js"></script>
+<script type="module" src="../js/login-redirect.js"></script>
+  </body>
+</html>

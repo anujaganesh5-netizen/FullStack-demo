@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <!-- Left: Logo + Title -->
+      <div class="left-section">
+        <img src="../assets/logo.jpeg" alt="Logo" />
+        <h3 class="site-title">InterviewHub</h3>
+      </div>
+
+      <!-- Center: Icons -->
+      <div class="nav-icons">
+        <a href="../index.html"> Home </a>
+
+        <a href="./job.html"> Jobs </a>
+
+        <a href="./resume.html"> Resume Builder</a>
+
+        <a href="./question.html"> Interview Prep </a>
+      </div>
+
+      <!-- Right: Hello + Login -->
+      <div class="right-section">
+        <a class="profile" href="./profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+        <h3 id="navUser">Hello, User</h3>
+        <a href="./login.html" class="login-btn" id="loginBtn">Login</a>
+        <button type="button" id="logoutBtn" class="login-btn">Logout</button>
+      </div>
+    </header>
+    <section class="profile-card">
+      <div class="cover">
+        <img src="../assets/Background_profile.png" alt="Cover" />
+      </div>
+
+      <div class="profile-info">
+        <!-- <div class="profile-pic">
+          <img src="../assets/me.jpeg" alt="Profile" />
+        </div> -->
+
+        <div class="profile-text">
+          <h1 id="profileName">User Name <span id="profileGender"></span></h1>
+          <p class="text" id="profileBio">Your bio</p>
+          <p class="location" id="profileLocation">
+            Location · <a href="#">Contact info</a>
+          </p>
+          <!-- <p class="connections" id="profileConnections">0 experience</p> -->
+        </div>
+
+        <div class="company">
+          <p id="profileCompany">Company Name</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p id="education1"></p>
+      <p id="education2"></p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <p id="skills"></p>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <p id="experience"></p>
+    </section>
+    <!--  EDIT BUTTON -->
+    <button id="editBtn">Edit Profile</button>
+    <div id="editForm" class="edit-form">
+      <div class="form-box">
+        <span id="closeForm" class="close-btn">&times;</span>
+
+        <h2>Edit Profile</h2><br>
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="editName" />
+        </div>
+
+        <div class="form-group">
+          <label>Bio</label>
+          <input type="text" id="editBio" />
+        </div>
+
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" id="editLocation" />
+        </div>
+
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" id="editCompany" />
+        </div>
+
+        <div class="form-group">
+          <label>Education 1</label>
+          <input type="text" id="editEducation1" />
+        </div>
+
+        <div class="form-group">
+          <label>Education 2</label>
+          <input type="text" id="editEducation2" />
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+          <input type="text" id="editSkills" />
+        </div>
+
+        <div class="form-group">
+          <label>Experience</label>
+          <input type="text" id="editExperience" />
+        </div>
+
+        <button id="saveBtn">Save</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 InterviewHub | Career Preparation Platform</p>
+    </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../js/profile.js" type="module"></script>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/name-logout.js"></script>
+    <script type="module" src="../js/login-redirect.js"></script>
+  </body>
+</html>

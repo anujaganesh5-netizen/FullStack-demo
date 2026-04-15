@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+/* HERO */
+
+.hero video {
+  margin-top: 50px;
+  /* height: 540px; */
+  width: 1400px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.447);
+  border-radius: 12px;
+}
+.hero h1 {
+  margin-top: 150px;
+  text-align: center;
+  color: linear-gradient(#2e3b55 800%, white 20%);
+}
+.hero h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: linear-gradient(#2e3b55 800%, white 20%);
+}
+/* ABOUT */
+
+.icon {
+  position: absolute;
+  top: 60px;
+  right: 600px;
+}
+.about {
+  padding: 80px 10%;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about h2 {
+  /* padding: 80px 20%; */
+  text-align: center;
+}
+.about p {
+  font-size: 20px;
+}
+/* JOBS */
+
+.jobs {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.job-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.job-card a {
+  text-decoration: none;
+  color: black;
+}
+/* FEATURES */
+
+.features {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #f3f3f3;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* JOB CARD HOVER */
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.job-card,
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+/* FEATURE CARD HOVER */
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
