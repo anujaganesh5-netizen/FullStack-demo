@@ -1,4 +1,7 @@
 // PROFILE ELEMENTS
+import { auth } from "./firebase.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+
 const profileName = document.getElementById("profileName");
 const profileBio = document.getElementById("profileBio");
 const profileLocation = document.getElementById("profileLocation");
@@ -27,19 +30,22 @@ const editExperience = document.getElementById("editExperience");
 
 
 //  LOAD DATA WHEN PAGE OPENS
-window.addEventListener("DOMContentLoaded", () => {
 
-  profileName.textContent = localStorage.getItem("name") || "User Name";
-  profileBio.textContent = localStorage.getItem("bio") || "Your bio";
-  profileLocation.textContent = localStorage.getItem("location") || "Location";
-  profileCompany.textContent = localStorage.getItem("company") || "Company";
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
 
-  education1.textContent = localStorage.getItem("education1") || "Add education";
-  education2.textContent = localStorage.getItem("education2") || "";
-  skills.textContent = localStorage.getItem("skills") || "Add skills";
-  experience.textContent = localStorage.getItem("experience") || "Add experience";
+    profileName.textContent = localStorage.getItem(uid + "_name") || "User Name";
+    profileBio.textContent = localStorage.getItem(uid + "_bio") || "Your bio";
+    profileLocation.textContent = localStorage.getItem(uid + "_location") || "Location";
+    profileCompany.textContent = localStorage.getItem(uid + "_company") || "Company";
+
+    education1.textContent = localStorage.getItem(uid + "_education1") || "Add education";
+    education2.textContent = localStorage.getItem(uid + "_education2") || "";
+    skills.textContent = localStorage.getItem(uid + "_skills") || "Add skills";
+    experience.textContent = localStorage.getItem(uid + "_experience") || "Add experience";
+  }
 });
-
 
 //  OPEN EDIT FORM
 editBtn.addEventListener("click", () => {
@@ -87,27 +93,36 @@ saveBtn.addEventListener("click", () => {
   const skillVal = editSkills.value;
   const expVal = editExperience.value;
 
-  // Save to localStorage
-  localStorage.setItem("name", name);
-  localStorage.setItem("bio", bio);
-  localStorage.setItem("location", locationVal);
-  localStorage.setItem("company", companyVal);
 
-  localStorage.setItem("education1", edu1);
-  localStorage.setItem("education2", edu2);
-  localStorage.setItem("skills", skillVal);
-  localStorage.setItem("experience", expVal);
+  saveBtn.addEventListener("click", () => {
+  const user = auth.currentUser;
+  if (!user) return;
 
-  // Update UI instantly
-  profileName.textContent = name;
-  profileBio.textContent = bio;
-  profileLocation.textContent = locationVal;
-  profileCompany.textContent = companyVal;
+  const uid = user.uid;
 
-  education1.textContent = edu1;
-  education2.textContent = edu2;
-  skills.textContent = skillVal;
-  experience.textContent = expVal;
+  localStorage.setItem(uid + "_name", editName.value);
+  localStorage.setItem(uid + "_bio", editBio.value);
+  localStorage.setItem(uid + "_location", editLocation.value);
+  localStorage.setItem(uid + "_company", editCompany.value);
+
+  localStorage.setItem(uid + "_education1", editEducation1.value);
+  localStorage.setItem(uid + "_education2", editEducation2.value);
+  localStorage.setItem(uid + "_skills", editSkills.value);
+  localStorage.setItem(uid + "_experience", editExperience.value);
+
+  // update UI
+  profileName.textContent = editName.value;
+  profileBio.textContent = editBio.value;
+  profileLocation.textContent = editLocation.value;
+  profileCompany.textContent = editCompany.value;
+
+  education1.textContent = editEducation1.value;
+  education2.textContent = editEducation2.value;
+  skills.textContent = editSkills.value;
+  experience.textContent = editExperience.value;
+
+  editForm.style.display = "none";
+});
 
   // Hide form
   editForm.style.display = "none";

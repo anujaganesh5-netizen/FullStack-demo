@@ -48,3 +48,17 @@ if (logoutBtn) {
     window.location.href = "../index.html";
   });
 }
+
+
+logoutBtn.addEventListener("click", async () => {
+  try {
+    await signOut(auth);
+
+    // ❌ Don't delete localStorage (important!)
+    // Data stays → will reload when user logs in again
+
+    window.location.href = "../index.html";
+  } catch (error) {
+    console.error("Logout error:", error);
+  }
+});
