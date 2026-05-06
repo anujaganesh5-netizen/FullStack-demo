@@ -1,0 +1,170 @@
+body {
+  background-color: #f3f4f6;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+  background: white;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.cover img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.profile-info {
+  position: relative;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+}
+
+.profile-text {
+  margin-left: 0;
+}
+
+.profile-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.text {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.location {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.company {
+  text-align: right;
+  font-weight: 700;
+  color: #111827;
+  font-size: 16px;
+}
+
+.section {
+  background: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 16px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.add-link p {
+  color: #4b5563;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Edit Form Overlay */
+.edit-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  outline: none;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #9ca3af;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #374151;
+}
+
+#editBtn, #saveBtn {
+  background-color: #2e3b55;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#editBtn:hover, #saveBtn:hover {
+  background-color: #e67e22;
+  transform: translateY(-1px);
+}
+
+
