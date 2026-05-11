@@ -15,7 +15,7 @@ form.addEventListener("submit", async (e) => {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // ✅ SAVE NAME IN FIREBASE (IMPORTANT FIX)
+
     await updateProfile(user, {
       displayName: name
     });

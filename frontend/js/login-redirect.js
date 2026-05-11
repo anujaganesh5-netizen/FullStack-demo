@@ -1,8 +1,8 @@
 import { auth } from "./firebase.js";
 import { onAuthStateChanged }
 from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
-
-const publicPages = ["index.html", "login.html", "signup.html"];
+.html", "login.
+const publicPages = ["indexhtml", "signup.html"];
 
 const currentPage = window.location.pathname.split("/").pop();
 
