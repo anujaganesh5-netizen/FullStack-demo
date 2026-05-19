@@ -50,5 +50,7 @@ a {
   text-decoration: none;
 }
 p {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
 }

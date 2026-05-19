@@ -4,39 +4,32 @@ const subject_id = params.get("subject");
 
 loadQuestions();
 
+async function loadQuestions() {
+  const container = document.getElementById("questionsContainer");
 
-async function loadQuestions(){
+  container.innerHTML = "Loading questions...";
 
-const container = document.getElementById("questionsContainer");
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:8000/subjects/${subject_id}/questions`,
+    );
 
-container.innerHTML = "Loading questions...";
+    const data = await response.json();
 
+    container.innerHTML = "";
 
-try{
+    if (data.length === 0) {
+      container.innerHTML = "No questions found";
 
-const response = await fetch(`http://127.0.0.1:8000/subjects/${subject_id}/questions`);
+      return;
+    }
 
-const data = await response.json();
+    data.forEach((q) => {
+      const card = document.createElement("div");
 
-container.innerHTML = "";
+      card.classList.add("question-card");
 
-
-if(data.length === 0){
-
-container.innerHTML = "No questions found";
-
-return;
-
-}
-
-
-data.forEach(q => {
-
-const card = document.createElement("div");
-
-card.classList.add("question-card");
-
-card.innerHTML = `
+      card.innerHTML = `
 
 <h3>${q.question}</h3>
 
@@ -44,17 +37,9 @@ card.innerHTML = `
 
 `;
 
-container.appendChild(card);
-
-});
-
-
-}
-
-catch(error){
-
-container.innerHTML = "Error loading questions";
-
-}
-
+      container.appendChild(card);
+    });
+  } catch (error) {
+    container.innerHTML = "Error loading questions";
+  }
 }
