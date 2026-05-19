@@ -11,7 +11,7 @@ async function loadQuestions() {
 
   try {
     const response = await fetch(
-      `http://127.0.0.1:8000/subjects/${subject_id}/questions`,
+      `https://full-stack-demo-inpi7knvf-anujaganesh5-7118s-projects.vercel.app/subjects/${subject_id}/questions`,
     );
 
     const data = await response.json();
