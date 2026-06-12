@@ -1,9 +1,7 @@
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding-top: 153px;
-  overflow-y: auto;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+  padding-top: 97px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .job-container {
@@ -66,7 +64,8 @@ body {
   margin: auto;
 }
 .next-page a {
-  color: black;
+  color:#2e3b55 ;
+  font-size: 20px;
   text-decoration: none;
 }
 .time-posted {

@@ -7,4 +7,4 @@ class QuestionSchema(BaseModel):
     answer: str
 
     class Config:
-        form_attribute = True
+        from_attributes = True
